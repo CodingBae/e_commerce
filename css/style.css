@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background: white;
+    font-family: sans-serif;
+    min-width: 900px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*==========================================
+            HEADER SECTION STARTS HERE
+===========================================*/
+
+#top-header{
+    background: rgb(73, 67, 67);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.section-container{
+    width: 80%;
+}
+
+#top-header-container{
+    width: 100%;
+    padding: .5rem 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+#header-top-social-icons{
+    display: flex;
+    align-items: center;
+}
+#header-top-social-icons a{
+    padding: 0 .5rem;
+    color: rgb(150, 150, 150);
+}
+
+/*==========================================
+            HEADER SECTION ENDS HERE
+===========================================*/
+
+/*==========================================
+            MAIN SECTION STARTS HERE
+===========================================*/
+#main-section{
+    display: flex;
+    justify-content: center;
+    height:85vh;
+    width: 100%;
+    background:linear-gradient(to bottom right, rgba(167, 163, 163,.3),rgba(163, 163, 159,.3));
+    background-size: cover;
+
+}
+
+#main-section-logo-container{
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    align-items: center;
+
+}
+#main-section-container-navbar{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+#main-section-logo-img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 1.5rem;
+}
+
+#main-section-logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#main-section-logo-text{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-section-searchbox{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background: white;
+    color: rgb(52, 195, 231);
+    font-weight: 800;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+
+}
+
+#main-section-searchbox input{
+    border: none;
+    height: 2.2rem;
+    width: 20vw;
+}
+
+#main-section-items-cart{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+#main-section-items-cart i{
+    color: rgb(52, 195, 231);
+}
+
+#main-section-items-cart p {
+ margin:0 1rem;
+ font-size: .8rem;
+}
+
+/*==========NAVBAR=============*/
+
+#main-section-navbar-container{
+    margin-top: 1.2rem;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to bottom right, rgba(72, 125, 156, 0.4), rgba(74, 141, 172, 0.4));
+}
+
+
+#main-section-navbar{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section-navbar a {
+    margin: 0 .7rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+#main-section-hero{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+#hero-vertical-navbar{
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    margin-right: 1.6rem;
+    font-weight: 600;
+}
+
+#hero-vertical-navbar div{
+  font-size: 1.3rem;
+  padding: .5rem 1.5rem;
+  border-bottom: 1px solid rgb(52, 195, 231);
+}
+
+#hero-vertical-navbar a{
+    color: black;
+    font-size: .9rem;
+}
+
+#hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#hero-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+/*==========================================
+            MAIN SECTION ENDS HERE
+===========================================*/
+
+/*==========================================
+            PRODUCT SECTION STARTS HERE
+===========================================*/
+
+#products-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.items-three-container{
+    margin-top: 2rem;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.items-three-item {
+    position: relative;
+    width: 30%;
+    height: 80%;
+    display: flex;
+}
+
+.items-three-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.items-three-item p {
+    padding: 10% .5rem;
+}
+
+#items-three-item-1{
+    background: red;
+}
+
+#items-three-item-2{
+    background: rgb(52, 195, 231);
+}
+
+#items-three-item-3{
+    background: rgb(118, 25, 180);
+}
+
+/*===========PRODUCT LIST====================*/
+.product-list-title{
+    font-size: 2rem;
+    margin-left: 40%;
+    display: inline-block;
+    color: rgb(52, 195, 231);
+    border-bottom: 2px solid rgb(52, 195, 231);
+}
+#product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.product-item{
+    height: 50vh;
+    width: 20%;
+    margin: 1rem;
+
+}
+
+.product-item-img{
+    height: 30vh;
+    margin-bottom: 1rem;
+    background: rgba(226, 223, 223,.5);
+}
+
+.product-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.item-description{
+    padding: .2rem .5rem;
+    margin-top: .6rem;
+}
+
+.price-container {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: .2rem .5rem;
+}
+
+.item-cart button{
+    cursor: pointer;
+    border: none;
+    margin-left:.5rem;
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    background: rgb(52, 195, 231);
+    border-radius: 2rem;
+}
+
+/*==========================================
+            PRODUCT SECTION ENDS HERE
+===========================================*/
+
+/*=============================================
+        FOOTER SECTION STARTS HERE
+===============================================*/
+
+#footer{
+    width: 100%;
+    height: 50vh;
+    background: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+}
+
+#section-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column{
+    padding:4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-title{
+    margin-bottom: .8rem;
+    font-size: 1.4rem;
+}
+
+.footer-column a, p {
+    color: rgb(150, 150, 150);
+    padding: .4rem 0;
+}
+
+#footer-column-icon-container a{
+    color: rgb(52, 195, 231);
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+#footer-column-newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-column-newsletter-email{
+    margin: 1rem 0;
+}
+#footer-column-newsletter-email input{
+    height: 2rem;
+    padding-left: 1rem;
+    background: rgb(100, 100, 100);
+    border: 2px solid rgb(100, 100, 100);
+
+}
+
+#footer-column-newsletter-button button {
+    background: rgb(100, 100, 100);
+    color: rgb(52, 195, 231);
+    border: none;
+    font-size: 1.5rem;
+    padding: .3rem .6rem;
+    cursor: pointer;
+}
+
+/*========= Cart Section ============================*/
+
+#cart-list-items{
+    color: rgb(52, 195, 231);
+    display: flex;
+    justify-content: center;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+}
+
+.cart-quantity {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: .3rem;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+    cursor: pointer;
+}
+
+.cart-quantity-input {
+    height: 2rem;
+    width: 4rem;
+    border-radius: .4rem;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid rgb(52, 195, 231);
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.cart-total-price {
+    font-size: 1.1rem;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 3rem auto 6rem auto;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background:orange;
+    border: 2px solid orange;
+    color: rgb(52, 195, 231);
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+
+/*============Effects(Hover)===============*/
+
+#header-top-social-icons a:hover{
+    background: rgb(119, 213, 245);
+    border-radius: 50%;
+    color: white;
+    transition: all .4s ease;
+}
+
+#main-section-navbar a:hover{
+    border-bottom: 2px solid #56CCF2;
+    transition: all .4s ease;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#hero-vertical-navbar a:hover{
+    background: #333;
+    color: #56CCF2;
+    transition: all .5s ease;
+    font-size: 1.2rem;
+    border-radius: .3rem;
+}
+
+.product-item button:hover{
+    background: white;
+    border-bottom:2px solid #56CCF2;
+    color: #56CCF2;
+    transition: all .4s ease-in;
+}
+.btn-danger:hover{
+    background: darkred;
+    font-size: 1.5rem;
+    transition: all .3s ease;
+}
+.btn-purchase:hover{
+    background: #56CCF2;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+#footer a:hover{
+    padding-left: 1rem;
+    background: #56CCF2;
+    border-radius: 2rem;
+    transition: all .3s ease-out;
+}
