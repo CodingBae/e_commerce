@@ -10,6 +10,6 @@ E_Commerce Project done all from scratch
   *I have used flexbox
 *Images
   *Item images are taken from amazon and after that i have given them transparent background
-  *Other iamges are taken from https://unsplash.com/
+  *Other images are taken from https://unsplash.com/
 
 
