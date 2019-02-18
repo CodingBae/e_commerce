@@ -8,7 +8,13 @@ body{
     color: white;
     background: white;
     font-family: sans-serif;
-    min-width: 900px;
+    background-image: url("../images/main-background.jpg");
+    min-width: 730px;
+   height: 100%;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 a{
@@ -58,9 +64,6 @@ a{
     justify-content: center;
     height:85vh;
     width: 100%;
-    background:linear-gradient(to bottom right, rgba(167, 163, 163,.3),rgba(163, 163, 159,.3));
-    background-size: cover;
-
 }
 
 #main-section-logo-container{
@@ -68,6 +71,7 @@ a{
     justify-content: flex-start;
     height: 50px;
     align-items: center;
+
 
 }
 #main-section-container-navbar{
@@ -129,6 +133,7 @@ a{
 }
 
 #main-section-items-cart p {
+  color: white;
  margin:0 1rem;
  font-size: .8rem;
 }
@@ -141,7 +146,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: center;
-    background:linear-gradient(to bottom right, rgba(72, 125, 156, 0.4), rgba(74, 141, 172, 0.4));
+    background:linear-gradient(to bottom right, rgba(72, 125, 156, 0.6), rgba(74, 141, 172, 0.6));
 }
 
 
@@ -177,8 +182,9 @@ a{
 }
 
 #hero-vertical-navbar div{
+  height: 100%;
   font-size: 1.3rem;
-  padding: .5rem 1.5rem;
+  padding: 0 1.5rem;
   border-bottom: 1px solid rgb(52, 195, 231);
 }
 
@@ -226,7 +232,7 @@ a{
 
 .items-three-item {
     position: relative;
-    width: 30%;
+    width: 25rem;
     height: 80%;
     display: flex;
 }
@@ -239,7 +245,11 @@ a{
 }
 
 .items-three-item p {
-    padding: 10% .5rem;
+    padding: 20% .5rem;
+}
+.items-three-item a {
+  padding: .1rem;
+  background: rgb(152, 195, 201);
 }
 
 #items-three-item-1{
@@ -261,6 +271,9 @@ a{
     display: inline-block;
     color: rgb(52, 195, 231);
     border-bottom: 2px solid rgb(52, 195, 231);
+    background: rgba(10, 10, 10, 0.35);
+    padding: 0 2rem;
+    border-radius: .3rem;
 }
 #product-list{
     display: flex;
@@ -271,7 +284,7 @@ a{
 
 .product-item{
     height: 50vh;
-    width: 20%;
+    width: 12rem;
     margin: 1rem;
 
 }
@@ -279,7 +292,9 @@ a{
 .product-item-img{
     height: 30vh;
     margin-bottom: 1rem;
-    background: rgba(226, 223, 223,.5);
+    background: rgba(226, 223, 223,.8);
+    border-radius: .3rem;
+    padding: .2rem;
 }
 
 .product-item-img img{
@@ -290,15 +305,22 @@ a{
 }
 
 .item-description{
+  background: rgba(0, 0, 0, 0.45);
     padding: .2rem .5rem;
     margin-top: .6rem;
+    border-radius: .5rem;
 }
 
-.price-container {
+.item-description p {
+  color : white;
+}
+.price-container{
+  margin-left: 3rem;
+}
+.price-container p {
     color: red;
     font-size: 1.4rem;
     font-weight: 800;
-    padding: .2rem .5rem;
 }
 
 .item-cart button{
@@ -513,19 +535,18 @@ a{
     font-weight: 500;
 }
 
-#hero-vertical-navbar a:hover{
-    background: #333;
+#hero-vertical-navbar div:hover{
+    background: #56CCF2;
     color: #56CCF2;
     transition: all .5s ease;
-    font-size: 1.2rem;
-    border-radius: .3rem;
+    cursor: pointer;
 }
 
 .product-item button:hover{
     background: white;
     border-bottom:2px solid #56CCF2;
     color: #56CCF2;
-    transition: all .4s ease-in;
+    transition: all .4s ease;
 }
 .btn-danger:hover{
     background: darkred;
@@ -539,8 +560,9 @@ a{
 }
 
 #footer a:hover{
-    padding-left: 1rem;
+    color: white;
+    padding-left: .3rem;
     background: #56CCF2;
-    border-radius: 2rem;
+    border-radius: .4rem;
     transition: all .3s ease-out;
 }

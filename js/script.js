@@ -1,9 +1,9 @@
+"use-strict";
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready();
 }
-
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -87,8 +87,10 @@ function addItemToCart(title, price, imageSrc) {
 }
 
 function updateCartTotal() {
+    var topBarCart = document.getElementById('main-section-cart-container');
     var cartItemContainer = document.getElementsByClassName('cart-items')[0];
     var cartRows = cartItemContainer.getElementsByClassName('cart-row');
+    var count  = 0;
     var total = 0;
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i];
@@ -96,8 +98,14 @@ function updateCartTotal() {
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
         var price = parseFloat(priceElement.innerText.replace('$', ''));
         var quantity = quantityElement.value;
+        count += parseInt(quantity);
         total = total + (price * quantity);
     }
     total = Math.round(total * 100) / 100;
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;
+    if (count<9){
+      topBarCart.innerHTML = '0' + count;
+    } else {
+      topBarCart.innerHTML =count;
+    }
 }
