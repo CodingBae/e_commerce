@@ -4,6 +4,8 @@ if (document.readyState == 'loading') {
 } else {
     ready();
 }
+
+
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -24,6 +26,12 @@ function ready() {
     }
 
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
+}
+
+function imgError(image) {
+    image.onerror = "";
+    image.src = "/images/noimage.jpeg";
+    return true;
 }
 
 function purchaseClicked() {
@@ -79,7 +87,7 @@ function addItemToCart(title, price, imageSrc) {
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
             <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
+        </div>`;
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
@@ -92,6 +100,7 @@ function updateCartTotal() {
     var cartRows = cartItemContainer.getElementsByClassName('cart-row');
     var count  = 0;
     var total = 0;
+    var divArray=[];
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i];
         var priceElement = cartRow.getElementsByClassName('cart-price')[0];
@@ -101,6 +110,8 @@ function updateCartTotal() {
         count += parseInt(quantity);
         total = total + (price * quantity);
     }
+
+
     total = Math.round(total * 100) / 100;
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;
     if (count<9){

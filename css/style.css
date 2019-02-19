@@ -39,7 +39,7 @@ a{
 
 #top-header-container{
     width: 100%;
-    padding: .5rem 0 ;
+    padding: .5rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -133,7 +133,7 @@ a{
 }
 
 #main-section-items-cart p {
-  color: white;
+  color: rgb(52, 195, 231);
  margin:0 1rem;
  font-size: .8rem;
 }
